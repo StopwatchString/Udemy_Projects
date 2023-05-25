@@ -29,7 +29,7 @@ const App = () => {
 
   const onAddExpenseHandler = (newExpense) => {
     setExpenses((prevState) => {
-      return [...prevState, newExpense];
+      return [...prevState, newExpense].sort((a, b) => a.date - b.date);
     });
   }
 
