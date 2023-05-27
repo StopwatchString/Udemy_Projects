@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
-import ExpensesList from "./components/ExpensesList/ExpensesList";
+import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 
 const initialExpenses = [
@@ -43,7 +43,7 @@ const App = () => {
   return (
     <div>
       <NewExpense onAddExpense={onAddExpenseHandler} />
-      <ExpensesList expenses={expenses} />
+      <Expenses expenses={expenses} />
     </div>
   );
 };
