@@ -12,6 +12,7 @@ const NewExpense = (props) => {
     };
 
     props.onAddExpense(expenseData);
+    setFormActive(false);
   };
 
   const activateForm = () => {
